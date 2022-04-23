@@ -199,7 +199,6 @@ class Motorbike extends Transport {
 class Bicycle extends Transport {
     wheelsCount = 2;
     constructor(maxSpeed, maxPassengers, wheelsCount){
-        maxSpeed = maxSpeed <= 80 ? maxSpeed : 80;
         super(maxSpeed, maxPassengers);
         this.wheelsCount = wheelsCount <= 3 && wheelsCount > 0 ? wheelsCount : 2;
     }
